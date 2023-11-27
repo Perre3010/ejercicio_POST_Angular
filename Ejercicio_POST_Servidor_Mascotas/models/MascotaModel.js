@@ -1,8 +1,9 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model, default: mongoose } = require("mongoose");
 
 const mascotaSchema = new Schema({
     id:{
         require:[true, "Id de la mascota es requerido"],
+        //type:mongoose.Schema.ObjectId
         type:String
     },
 
@@ -26,7 +27,7 @@ const mascotaSchema = new Schema({
         type:String
     },
 
-    Color:{
+    color:{
         require:[true,"Color de la mascota es requerida"],
         type:String
     },

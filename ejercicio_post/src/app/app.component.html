@@ -1,0 +1,45 @@
+
+    <form #studentForm="ngForm" (ngSubmit)="onSubmit()">
+      <label for="codigo">Código:</label>
+      <input type="text" id="codigo" name="codigo" [(ngModel)]="studentData.codigo" required>
+      <br>
+      <label for="alumno">Alumno:</label>
+      <input type="text" id="alumno" name="alumno" [(ngModel)]="studentData.alumno" required>
+      <br>
+      <label for="periodo">Período:</label>
+      <input type="text" id="periodo" name="periodo" [(ngModel)]="studentData.periodo" required>
+      <br>
+      <label for="nom_materia">Nombre de la Materia:</label>
+      <input type="text" id="nom_materia" name="nom_materia" [(ngModel)]="studentData.nom_materia" required>
+      <br> 
+      <label for="apreciacion">Apreciación:</label>
+      <input type="text" id="apreciacion" name="apreciacion" [(ngModel)]="studentData.apreciacion" required>
+      <br>  
+      <label for="total_faltas">Total de Faltas:</label>
+      <input type="text" id="total_faltas" name="total_faltas" [(ngModel)]="studentData.total_faltas" required>
+      <br> 
+      <label for="nota_examen1">Nota Examen 1:</label>
+      <input type="text" id="nota_examen1" name="nota_examen1" [(ngModel)]="studentData.nota_examen1" required>
+      <br>  
+      <label for="nota_examen2">Nota Examen 2:</label>
+      <input type="text" id="nota_examen2" name="nota_examen2" [(ngModel)]="studentData.nota_examen2" required>
+      <br>
+      <label for="nota_examen3">Nota Examen 3:</label>
+      <input type="text" id="nota_examen3" name="nota_examen3" [(ngModel)]="studentData.nota_examen3" required>
+      <br>  
+      <label for="nota_definitiva">Nota Definitiva:</label>
+      <input type="text" id="nota_definitiva" name="nota_definitiva" [(ngModel)]="studentData.nota_definitiva" required>
+      <br> 
+      <label for="nota_habilitacion">Nota Habilitación:</label>
+      <input type="text" id="nota_habilitacion" name="nota_habilitacion" [(ngModel)]="studentData.nota_habilitacion" required>
+      <br>  
+      <label for="horario">Horario:</label>
+      <input type="text" id="horario" name="horario" [(ngModel)]="studentData.horario" required>
+      <br> 
+      <label for="docente">Docente:</label>
+      <input type="text" id="docente" name="docente" [(ngModel)]="studentData.docente" required>
+  
+      <!-- Agrega más campos según sea necesario -->
+      <br> 
+      <button type="submit">Registrar Estudiante</button>
+    </form>
